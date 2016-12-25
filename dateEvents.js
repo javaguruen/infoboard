@@ -1,6 +1,8 @@
 <!-- Add events on the pattern 'yyyy-mm-dd' -->
 var events = {
-	'2016-12-25' : "1. juledag!"
+	'2016-12-24' : "Julaften!",
+	'2016-12-25' : "1. juledag!",
+	'2016-12-31' : "Nyttårsaften"
 };
 
 function withLeadingZero(s){
