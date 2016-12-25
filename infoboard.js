@@ -36,5 +36,10 @@
 			var dato = d.yyyymmdd();
 			var tekst = "Dagen i dag: " + dato;
 			document.getElementById("overskrift").innerHTML = tekst;
-   			document.getElementById('dagenidag').src = "planer/dagenidag/" + d.getDay() + ".html";
+			document.getElementById("dailyEvent").innerHTML = getTodaysEvent(d);
+			var day = d.getDay();
+			if ( day === 0){
+				day = 7;
+			}
+   			document.getElementById('dagenidag').src = "planer/dagenidag/" + day + ".html";
 		}
